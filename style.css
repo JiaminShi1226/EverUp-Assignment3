@@ -1,0 +1,57 @@
+.largebox{
+    position: relative;
+}
+
+.largebox img{
+    width: 100%;
+    height: 100%;
+}
+
+.clock{
+    position: absolute;
+    top:10%;
+    width:20%;
+    left:10%;
+    opacity: 0.6;
+    background-color: lightseagreen;
+    border-radius: 50%;
+}
+
+.pointer1{
+    position: absolute;
+    width:35%;
+    top:40%;
+    left:50%;
+    animation: hour 10s infinite linear;
+    transform-origin: left;
+}  
+
+.pointer2{
+    position: absolute;
+    width:35%;
+    top:39%;
+    left:50%;
+    transform: rotate(-90deg);
+    animation: minute 10s infinite linear;
+    transform-origin: left;
+} 
+
+.msgbox{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    bottom:15%;
+    right:5%;
+    color:white;
+    width:30%;
+    height: 150px;
+    font-size: 15px;
+}
+
+@keyframes hour {
+    100%{transform: rotate(30deg);}
+
+}
+
+@keyframes minute {
+    100%{transform: rotate(280deg);}
+}
